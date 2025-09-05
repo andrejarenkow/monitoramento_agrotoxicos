@@ -35,7 +35,7 @@ with ui.layout_columns():
         def mapa():
             center_lat = dados["Latitude"].mean()
             center_lon = dados["Longitude"].mean()
-            m = Map(center=(center_lat, center_lon, ), zoom=7, scroll_wheel_zoom=True, basemap=basemaps.Esri.WorldStreetMap)
+            m = Map(center=(center_lat, center_lon, ), zoom=7, scroll_wheel_zoom=True, basemap=basemaps.NASAGIBS.ModisTerraBands367CR)
         
             # Normalizar Detecção para escala de cores
             detec_min = dados["Detecção"].min()
